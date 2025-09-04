@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sum of two Square</title>
+</head>
+<body>
+    <h5>Sum of Square of a given number</h5>
+    <input type="button" onclick="sumSquare()" id="check-fact" value="Check sumSquare" aria-label="sum-square"> 
+    <script lang="javascript" type="text/javascript">
+        function sumSquare(){
+            
+            alert("Enter number for sum of square of numbers");
+            let n = parseInt(prompt("Enter number", ""));
+            if(isNaN(n) || n < 0){
+                alert("Enter valid number");
+                return;
+            }
+            let sum = 0;
+            sum = ((n*(n+1)*(2*n+1))/6);
+
+            alert('Sum of squares of ' + n + ' number is : ' + sum);
+            
+        }
+    </script>
+</body>
+</html>
